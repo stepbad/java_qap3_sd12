@@ -11,5 +11,16 @@ public class Demo {
 
         // Print the updated state
         System.out.println("Updated state: " + person);
+
+         // Create a Student object
+         Student student = new Student("David Simms", 20, "M", "S12345", 3.75);
+         System.out.println("Initial state: " + student);
+ 
+         // Update the student's details using setters
+         student.setIdNum("S54321");
+         student.setGPA(3.95);
+ 
+         // Print the updated state
+         System.out.println("Updated state: " + student);
     }
 }
