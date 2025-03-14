@@ -33,5 +33,16 @@ public class Demo {
 
         // Print the updated state
         System.out.println("Updated state: " + teacher);
+
+        // Create a CollegeStudent object
+        CollegeStudent collegeStudent = new CollegeStudent("Alex Turner", 19, "M", "UCB456", 3.8, 2, "Computer Science");
+        System.out.println("Initial state: " + collegeStudent);
+
+        // Update the college student's details using setters
+        collegeStudent.setYear(3);
+        collegeStudent.setMajor("Mathematics");
+
+        // Print the updated state
+        System.out.println("Updated state: " + collegeStudent);
     }
 }
