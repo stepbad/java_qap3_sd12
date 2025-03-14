@@ -9,5 +9,13 @@ public class Demo3 {
         for (Shape shape : shapes) {
             System.out.println(shape);
         }
+
+        // Create Circle objects
+        Circle circle1 = new Circle("Circle1", 5.0);
+        Circle circle2 = new Circle("Circle2", 7.5);
+
+        // Print each Circle's details
+        System.out.println(circle1);
+        System.out.println(circle2);
     }
 }
