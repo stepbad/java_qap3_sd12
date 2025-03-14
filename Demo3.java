@@ -36,5 +36,13 @@ public class Demo3 {
         } catch (IllegalArgumentException e) {
             System.err.println("Caught an invalid triangle: " + e.getMessage());
         }
+
+        // Create an EquilateralTriangle object
+        EquilateralTriangle eqTriangle1 = new EquilateralTriangle("Equilateral1", 5.0);
+        EquilateralTriangle eqTriangle2 = new EquilateralTriangle("Equilateral2", 10.0);
+
+        // Print each EquilateralTriangle's details
+        System.out.println(eqTriangle1);
+        System.out.println(eqTriangle2);
     }
 }
