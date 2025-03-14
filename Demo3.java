@@ -17,5 +17,24 @@ public class Demo3 {
         // Print each Circle's details
         System.out.println(circle1);
         System.out.println(circle2);
+
+        // Create Triangle objects
+        try {
+            Triangle triangle1 = new Triangle("Triangle1", 3.0, 4.0, 5.0);
+            Triangle triangle2 = new Triangle("Triangle2", 6.0, 8.0, 10.0);
+
+            // Print each Triangle's details
+            System.out.println(triangle1);
+            System.out.println(triangle2);
+        } catch (IllegalArgumentException e) {
+            System.err.println(e.getMessage());
+        }
+
+        // Example of an invalid triangle (will cause an exception)
+        try {
+            Triangle invalidTriangle = new Triangle("InvalidTriangle", 1.0, 2.0, 10.0);
+        } catch (IllegalArgumentException e) {
+            System.err.println("Caught an invalid triangle: " + e.getMessage());
+        }
     }
 }
