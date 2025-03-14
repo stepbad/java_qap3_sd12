@@ -22,5 +22,16 @@ public class Demo {
  
          // Print the updated state
          System.out.println("Updated state: " + student);
+
+          // Create a Teacher object
+        Teacher teacher = new Teacher("Sarah Buckle", 40, "F", "Chemistry", 55000.00);
+        System.out.println("Initial state: " + teacher);
+
+        // Update the teacher's details using setters
+        teacher.setSubject("Physics");
+        teacher.setSalary(60000.00);
+
+        // Print the updated state
+        System.out.println("Updated state: " + teacher);
     }
 }
